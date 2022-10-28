@@ -19,5 +19,5 @@ then
    git branch -r --merged main | sed 's/ *origin\///' \
              | grep -v 'main$' | xargs -I% git push origin :%
    echo "Done!"
-   say "Obsolete branches are removed"
+   echo "Obsolete branches are removed"
 fi
